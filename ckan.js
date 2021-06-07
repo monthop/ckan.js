@@ -150,7 +150,8 @@ module.exports = CKAN;
       conf.json, // data
       { // options
         json: true,
-        headers: conf.headers
+        headers: conf.headers,
+        multipart: true
       },
       function(err, res) {
         if (err || typeof res === undefined) {
